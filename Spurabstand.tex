@@ -9,6 +9,12 @@
 \usepackage[ngerman]{babel}
 \usepackage{ngerman,graphicx}
 
+\usepackage{natbib} %für Harvard Style
+\setcitestyle{authoryear,open={(},close={)}}
+\let\cite\citep % \let kopiert zweiten Befehl in ersten Befehl
+
+\bibliographystyle{apalike} %Harvard Style, Literaturverzeichnis "`Nachname, V.,"'
+
 
 
 \usepackage{setspace} %Paket zum Ändern des Zeilenabstandes
@@ -17,7 +23,7 @@
 
 \linespread{1.5}
 
-\author{Fabian Konrad, Armin Beck, André Berberich}
+\author{Armin Beck, André Berberich, Fabian Konrad}
 \title{Unterschiedliche Datenkapazität bei CDs und DVDs}
 
 
@@ -92,21 +98,21 @@ Einschätzung Versuchsaufbau (wie zielführend war der Versuch?)
 Bei einer DVD wird genau dasselbe Verfahren angewendet. Allerdings ist der Abstand und folglich auch der Flächenverbrauch je Loch hier deutlich geringer, somit steigt die Datenkapazität auf das Fünffache an. Es besteht des Weiteren die Möglichkeit, bis zu 2 Schichten übereinander zu legen und zu lesen. Dies verdoppelt die Datenkapazität wiederum.
 
 
-
-
-\bibliographystyle{unsrt} 
-% Stil sollte \bibliographystyle{harvard} da von der DHBW "empfohlen"
  \bibliography{ReferenceDatabase} %Pfadangabe zur Zitatdatei
+
 
 \listoffigures
 
 \chapter{PlaceHolder Citation}
 
-Zitat Eichler \cite{Eichler2015}
+Zitat Eichler \cite[page example nr]{Eichler2015}
 
 Zitat Reider \cite{Reider2012}
 
 Zitat Patalong \cite{Patalong2007}
+
+Zitat Dissertation Lang \cite{Lang1997}
+
 
 
 \chapter{PlaceHolder Pictures}
