@@ -7,6 +7,7 @@
 % {pnasresearcharticle} = Template for a two-column research article
 % {pnasmathematics} = Template for a one-column mathematics article
 % {pnasinvited} = Template for a PNAS invited submission
+\usepackage{siunitx}
 
 \setboolean{displaywatermark}{false} % Set to false to remove the watermark
 
@@ -17,14 +18,18 @@
 \author[a]{André Berberich} 
 \author[a]{Fabian Konrad}
 
-\affil[a]{DHBW Mosbach}
+\affil[a]{Student der DHBW Mosbach}
 
 
 % Keywords are not mandatory, but authors are strongly encouraged to provide them. If provided, please include two to five keywords, separated by the pipe symbol, e.g:
 \keywords{Laser $|$ CD $|$ DVD $|$ Optische Datenträger} 
 
 \begin{abstract}
-To Be Done
+This paper presents a revolutionary and repeatable method to prove the track pitch of an optical, laser based, data medium.
+Using a hand held light emitting pistol, the track pitch of an standard medium was measured to be between 0,74 \si{\micro\metre} and 1,6 \si{\micro\metre}.
+Results show outstanding agreement with the provided, theoretical values of the manufactures.
+The method presented has significant implications for future storage of big data in the cloud 
+and may one day will be the contributing factor for the digitization of the industry.
 \end{abstract}
 
 \dates{This manuscript was compiled on \today}
@@ -39,7 +44,10 @@ To Be Done
 \thispagestyle{firststyle}
 \ifthenelse{\boolean{shortarticle}}{\ifthenelse{\boolean{singlecolumn}}{\abscontentformatted}{\abscontent}}{}
 .
-\dropcap{H}ier sollte die Einleitung stehen
+\dropcap{D}ie Forschung ist sich einig, dass es wichtig ist, bestehende Technologien zu reflektieren und daraus entsprechende Schlüsse für die Zukunft zu ziehen. Weiterentwicklungen im Speicherbereich dienen als Grundlage für den Weg der Digitalisierung und der globalen Vernetzung. 
+Die Anforderungen an Speicher, der jederzeit erreichbar, redundant ausgelegt und hochperformant sein muss, steigt mit jedem Tag.
+Die in diesem Artikel vorgestellte Methode ermöglicht es Spurabstände auf optischen Datenträgern zu ermitteln und zu validieren. Dadurch wird man in die Lage versetzt, die siginfikanten Unterschiede diverser optischer Medien im Bezug auf die Datenkapazität, zu erklären.
+Die mit dieser Vorgehensweise ermittelten Werte für handelsübliche CDs und DVDs, sollen als Referenz und Denkanstoß für die Entwicklung von innovativen Speicherlösungen von morgen dienen.
 
 \section*{Technische Grundlagen für den Versuch}
 
