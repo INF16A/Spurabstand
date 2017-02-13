@@ -53,13 +53,6 @@ Die mit dieser Vorgehensweise ermittelten Werte für handelsübliche CDs und DVD
 
 \section*{Technische Grundlagen für den Versuch}
 
-\subsection*{Interferenz}
-
- Da der Lochabstand von CD und DVD extrem gering ist, kann man diese mit einem handelsüblichen Laserpointer durchleuchten und hierbei die Löcher als Doppelspalt verwenden. Es treten die für einen Doppelspalt typischen Effekte auf, anhand deren man das Verhältnis aus Wellenlänge und Lochabstand berechnen kann.
-
-Überlagerung von Wellen zur Feststellung der Abstände
-Unterscheidet sich vom Leseverfahren welches eine ledigliche Spiegelung ist
-Grundlagen/Hinführung wieso Laser verwendet wurde
 
 
 \subsection*{Aufbau und Lese-/Schreibverfahren}
@@ -90,7 +83,7 @@ Laser DVD}
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.6\textwidth,keepaspectratio]
+\includegraphics[width=0.3\textwidth,keepaspectratio]
 {Pictures/Versuchsaufbau.png}
 \parbox{0.9\textwidth}
 
@@ -99,20 +92,116 @@ Schematischer Aufbau}
 \sffamily \small{Versuchsaufbau}
 }
 \end{figure}
+\subsection*{Interferenz / Versuchsergebnisse}
+
+ Da der Lochabstand von CD und DVD extrem gering ist, kann man diese mit einem handelsüblichen Laserpointer durchleuchten und hierbei die Löcher als Doppelspalt verwenden. Es treten die für einen Doppelspalt typischen Effekte auf, anhand deren man das Verhältnis aus Wellenlänge und Lochabstand berechnen kann.
+
+Überlagerung von Wellen zur Feststellung der Abstände
+Unterscheidet sich vom Leseverfahren welches eine ledigliche Spiegelung ist
+Grundlagen/Hinführung wieso Laser verwendet wurde
+
+\section*{Interpretation der ermittelten Werte}
+Durch die gewonnen Messergebnisse aus [... Referenz zu Messergebnisse] konnten die Hersteller Angaben von ... [Zitat Hersteller](CD) und ... [Zitat Hersteller](DVD) bestätigt werden.
+\begin{equation} \label{eq:cdspur} s_{CD} =  1,62\mbox{ \textmu m}  \end{equation}
+\begin{equation} \label{eq:dvdspur} s_{DVD} =  0,73\mbox{ \textmu m}  \end{equation} 
+\subsection{Vergleich Datenkapazität CD und DVD}
+Der geringere Spurabstand der DVD ist einer der Gründe, warum diese eine höhere Datenkapazität als CD hat, obwohl beide die gleiche Bauform haben.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.5\textwidth,keepaspectratio]
+{Pictures/Rohling.png}
+\parbox{0.9\textwidth}
+
+{\caption{\label{fig:Rohling}
+Schematische Darstellung einer CD/DVD}
+
+\sffamily \small{Ein typischer Rohling mit gekennzeichnetem Datenbereich und Radien}
+}
+\end{figure}
+
+Aus \ref{fig:Rohling}, das den schematischen Aufbau einer CD oder DVD zeigt, können zwei Radien entnommen werden, über die die Fläche des Datenbereichs berechnet werden kann.
+Für die folgenden Berechnungen gilt:  \begin{math} r_i  = \mbox{innerer Radius und } r_a = \mbox{äußerer Radius} \end{math} \\
+Von einer CD konnten die folgenden Werte abgelesen werden: \begin{math} r_{inner_{CD}} = 2,3 \mbox{ cm und } r_{outer_{CD}} = 5,8 \mbox{ cm} \end{math} \\
+
+Mit der Formel für die Fläche eines Kreisringes \cite[Seite 147]{Bartsch2014} kann die Fläche für Daten berrechnet werden: \begin{equation} \label{eq:kreisring} A = \pi((r_a)^2-(r_i)^2)  \end{equation} 
+
+Die Gesamtlänge einer Spur kann folgendermaßen berechnet werden \begin{equation} \label{eq:gesamtlänge} L = \frac{\mbox{Fläche für Daten}}{\mbox{Spurbreite}} \end{equation}
+Die Anzahl der Bits im Datenbereich kann dann anschließend ebenfalls berechnet werden \begin{equation} \label{eq:bitanzahl} N_Bits = \frac{L}{0,5*\mbox{Spurbreite}} \end{equation}
+
+\subsection{Berechnung CD}
+Für eine CD ergibt sich folgende Berechnung: \\ \\
+Für die genutzte Datenfläche aus \eqref{eq:kreisring}
+\begin{align*}
+ A_{CD} &= \pi((r_{outer_{CD}})^2-(r_{inner_{CD}})^2)  \ref{eq:kreisring}\\	
+&= \pi((5,8\mbox{cm})^2-(2,3\mbox{ cm})^2) \\
+ &=  \pi((0,0058\mbox{ m})^2-(0,0023\mbox{ m})^2) \approx  8,91*10^{-3}\mbox{ m}^2.
+\end{align*}
+
+Für die Gesamtlänge der Spur aus \ref{eq:kreisring} ergibt sich mit \eqref{eq:cdspur}
+\begin{align*}
+ L_{CD} &= \frac{\mbox{Fläche für Daten}}{\mbox{Spurbreite}}\\
+ &= \frac{A_{CD}}{s_{CD}}\\
+ &= \frac{8,91*10^{-3}\mbox{ m}^2}{1,62*10^{-6}\mbox{ m} }
+ &= 5500\mbox{ m}
+\end{align*}
+
+Die Anzahl der Bits beträgt dann über \eqref{eq:bitanzahl}
+\begin{align*}
+N_{CD-Bits} &=  \frac{L_{CD}}{0,5*s_{CD}}\\
+&= \frac{5500\mbox{ m}}{0,5*1,62*10^{-6}\mbox{ m}}\\
+&= 6790123457 \\
+&\approx 6,79*10^9
+\end{align*}
+
+Umgerechnet in MByte
+\begin{align*}
+C_{CD} &= \frac{N_{CD-Bits}}{8*1024*1024}\\
+C_{CD} &= \frac{ 6,79*10^9}{8*1024*1024}\\
+&\approx 809\mbox{ MB}
+\end{align*}
+
+Die Größenordnung entspricht der einer handelsüblichen CD.
+
+\subsection{Berechnung DVD}
+Für eine DVD ergibt sich analog dazu die folgende Berechnung: \\ \\
+Von einer DVD konnten die folgenden Werte abgelesen werden: \begin{math} r_{inner_{DVD}} = 2,3 \mbox{ cm und } r_{outer_{DVD}} = 5,9 \mbox{ cm} \end{math} \\
+
+Für die genutzte Datenfläche aus \eqref{eq:kreisring}
+\begin{align*}
+ A_{DVD} &= \pi((r_{outer_{DVD}})^2-(r_{inner_{DVD}})^2)  \ref{eq:kreisring}\\	
+&= \pi((5,9\mbox{cm})^2-(2,3\mbox{ cm})^2) \\
+ &=  \pi((0,0059\mbox{ m})^2-(0,0023\mbox{ m})^2) \approx 9,27*10^{-3}\mbox{ m}^2.
+\end{align*}
+
+Für die Gesamtlänge der Spur aus \ref{eq:kreisring} ergibt sich mit \eqref{eq:cdspur}
+\begin{align*}
+ L_{DVD} &= \frac{\mbox{Fläche für Daten}}{\mbox{Spurbreite}}\\
+ &= \frac{A_{DVD}}{s_{DVD}}\\
+ &= \frac{9,27*10^{-3}\mbox{ m}^2}{0,73*10^{-6}\mbox{ m} }
+ &\approx 12700\mbox{ m}
+\end{align*}
+
+Die Anzahl der Bits beträgt dann über \eqref{eq:bitanzahl}
+\begin{align*}
+N_{DVD-Bits} &=  \frac{L_{DVD}}{0,5*s_{DVD}}\\
+&= \frac{12700\mbox{ m}}{0,5*0,73*10^{-6}\mbox{ m}}\\
+&\approx 3,48*10^{10}
+\end{align*}
+
+Umgerechnet in GByte
+\begin{align*}
+C_{DVD} &= \frac{N_{DVD-Bits}}{8*1024*1024}\\
+C_{DVD} &= \frac{3,48*10^{10}}{8*1024*1024*1024}\\
+&\approx 4,05\mbox{ GB}
+\end{align*}
+
+Auch diese Größenangabe entspricht der einer handelsübliche DVD.
 
 
-\section*{Versuchsergebnisse}
-Diagramm, Tabelle mit Messwerte, Bilder der Versuchsdurchführung
-
-\subsection*{Fehleranalyse}
-Darstellung möglicher Fehlerquellen ( Laborbedingungen, Toleranzen, Messungenauigkeit)
-
-\section*{Interpretation / Fazit}
-
-Einschätzung Versuchsaufbau (wie zielführend war der Versuch?)
-Bei einer DVD wird genau dasselbe Verfahren angewendet. Allerdings ist der Abstand und folglich auch der Flächenverbrauch je Loch hier deutlich geringer, somit steigt die Datenkapazität auf das Fünffache an. Es besteht des Weiteren die Möglichkeit, bis zu 2 Schichten übereinander zu legen und zu lesen. Dies verdoppelt die Datenkapazität wiederum.
-
-
+Mit dieser Methode ist es nun auch möglich, weitere optische Datenträger zu überprüfen.
+Aufgrund der erhebbaren Daten sind Neuerungen in der Speichertechnik von optische Medien denkbar, die in der Zukunft eine zentrale Rolle für Speicherlösungen spielen können.
+Denkbar sind extrem kleine Spurabstände oder Medien, die sehr viele verschiedene Datenspuren enthalten.
 
 
 % \pnasbreak splits and balances the columns before the references.
