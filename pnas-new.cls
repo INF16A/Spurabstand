@@ -34,7 +34,7 @@
 
 %% Fonts and language
 \RequirePackage[utf8]{inputenc}
-\RequirePackage[english, ngerman]{babel}
+\RequirePackage[english]{babel}
 \RequirePackage{amsmath,amsfonts,amssymb}
 \RequirePackage{lmodern}
 \RequirePackage[scaled]{helvet}
@@ -98,7 +98,7 @@
 %% Watermark 
 \usepackage[printwatermark]{xwatermark}
 \newboolean{displaywatermark}
-\setboolean{displaywatermark}{false} % Set to false to remove the watermark
+\setboolean{displaywatermark}{true} % Set to false to remove the watermark
 \AtBeginDocument{%
   \ifthenelse{\boolean{displaywatermark}}{%
   \newwatermark[allpages,color=gray!20,angle=45,scale=3,xpos=0,ypos=0]{DRAFT}}{}
@@ -154,18 +154,17 @@
 %% unsrtnat
 \RequirePackage[numbers,sort&compress,merge,round]{natbib}
 \setlength{\bibsep}{0.0pt}
-\bibliographystyle{apalike}
-%\IfFileExists{pnas-new.bst}{
-%  \bibliographystyle{pnas-new}
-%}{
-%  \IfFileExists{pnas2011.bst}{
-%    \bibliographystyle{pnas2011}
-%    \PackageWarning{pnas-new}{pnas-new.bst not found; using pnas2011.bst instead}
-%  }{
-%    \bibliographystyle{unsrtnat}
-%    \PackageWarning{pnas-new}{pnas-new.bst and pnas2011.bst not found; falling back to unsrtnat instead}
-%  }
-%}
+\IfFileExists{pnas-new.bst}{
+  \bibliographystyle{pnas-new}
+}{
+  \IfFileExists{pnas2011.bst}{
+    \bibliographystyle{pnas2011}
+    \PackageWarning{pnas-new}{pnas-new.bst not found; using pnas2011.bst instead}
+  }{
+    \bibliographystyle{unsrtnat}
+    \PackageWarning{pnas-new}{pnas-new.bst and pnas2011.bst not found; falling back to unsrtnat instead}
+  }
+}
 \renewcommand{\bibsection}{} % Remove header
 \renewcommand\bibfont{\normalfont\sffamily\fontsize{6}{8}\selectfont} % set font to be sans serif
 
