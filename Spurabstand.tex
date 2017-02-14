@@ -133,31 +133,31 @@ Die Anzahl der Bits im Datenbereich kann dann anschließend ebenfalls berechnet 
 Für eine CD ergibt sich folgende Berechnung: \\ \\
 Für die genutzte Datenfläche aus \eqref{eq:kreisring}
 \begin{align*}
- A_{CD} &= \pi((r_{outer_{CD}})^2-(r_{inner_{CD}})^2)  \ref{eq:kreisring}\\	
-&= \pi((5,8\mbox{cm})^2-(2,3\mbox{ cm})^2) \\
- &=  \pi((0,0058\mbox{ m})^2-(0,0023\mbox{ m})^2) \approx  8,91*10^{-3}\mbox{ m}^2.
+ A_{CD} &= \pi\cdot((r_{outer_{CD}})^2-(r_{inner_{CD}})^2)  \ref{eq:kreisring}\\	
+&= \pi\cdot((5,8\mbox{cm})^2-(2,3\mbox{ cm})^2) \\
+ &=  \pi\cdot((0,0058\mbox{ m})^2-(0,0023\mbox{ m})^2) \approx  8,91\cdot10^{-3}\mbox{ m}^2.
 \end{align*}
 
 Für die Gesamtlänge der Spur aus \ref{eq:kreisring} ergibt sich mit \eqref{eq:cdspur}
 \begin{align*}
  L_{CD} &= \frac{\mbox{Fläche für Daten}}{\mbox{Spurbreite}}\\
  &= \frac{A_{CD}}{s_{CD}}\\
- &= \frac{8,91*10^{-3}\mbox{ m}^2}{1,62*10^{-6}\mbox{ m} }
+ &= \frac{8,91\cdot10^{-3}\mbox{ m}^2}{1,62\cdot10^{-6}\mbox{ m} }
  &= 5500\mbox{ m}
 \end{align*}
 
 Die Anzahl der Bits beträgt dann über \eqref{eq:bitanzahl}
 \begin{align*}
-N_{CD-Bits} &=  \frac{L_{CD}}{0,5*s_{CD}}\\
-&= \frac{5500\mbox{ m}}{0,5*1,62*10^{-6}\mbox{ m}}\\
+N_{CD-Bits} &=  \frac{L_{CD}}{0,5\cdot s_{CD}}\\
+&= \frac{5500\mbox{ m}}{0,5 \cdot 1,62 \cdot 10^{-6}\mbox{ m}}\\
 &= 6790123457 \\
-&\approx 6,79*10^9
+&\approx 6,79 \cdot 10^9
 \end{align*}
 
 Umgerechnet in MByte
 \begin{align*}
-C_{CD} &= \frac{N_{CD-Bits}}{8*1024*1024}\\
-C_{CD} &= \frac{ 6,79*10^9}{8*1024*1024}\\
+C_{CD} &= \frac{N_{CD-Bits}}{8\cdot1024\cdot1024}\\
+C_{CD} &= \frac{ 6,79\cdot10^9}{8\cdot1024\cdot1024}\\
 &\approx 809\mbox{ MB}
 \end{align*}
 
@@ -169,30 +169,30 @@ Von einer DVD konnten die folgenden Werte abgelesen werden: \begin{math} r_{inne
 
 Für die genutzte Datenfläche aus \eqref{eq:kreisring}
 \begin{align*}
- A_{DVD} &= \pi((r_{outer_{DVD}})^2-(r_{inner_{DVD}})^2)  \ref{eq:kreisring}\\	
-&= \pi((5,9\mbox{cm})^2-(2,3\mbox{ cm})^2) \\
- &=  \pi((0,0059\mbox{ m})^2-(0,0023\mbox{ m})^2) \approx 9,27*10^{-3}\mbox{ m}^2.
+ A_{DVD} &= \pi\cdot((r_{outer_{DVD}})^2-(r_{inner_{DVD}})^2)  \ref{eq:kreisring}\\	
+&= \pi\cdot((5,9\mbox{cm})^2-(2,3\mbox{ cm})^2) \\
+ &=  \pi\cdot((0,0059\mbox{ m})^2-(0,0023\mbox{ m})^2) \approx 9,27\cdot10^{-3}\mbox{ m}^2.
 \end{align*}
 
 Für die Gesamtlänge der Spur aus \ref{eq:kreisring} ergibt sich mit \eqref{eq:cdspur}
 \begin{align*}
  L_{DVD} &= \frac{\mbox{Fläche für Daten}}{\mbox{Spurbreite}}\\
  &= \frac{A_{DVD}}{s_{DVD}}\\
- &= \frac{9,27*10^{-3}\mbox{ m}^2}{0,73*10^{-6}\mbox{ m} }
+ &= \frac{9,27\cdot10^{-3}\mbox{ m}^2}{0,73\cdot10^{-6}\mbox{ m} }
  &\approx 12700\mbox{ m}
 \end{align*}
 
 Die Anzahl der Bits beträgt dann über \eqref{eq:bitanzahl}
 \begin{align*}
-N_{DVD-Bits} &=  \frac{L_{DVD}}{0,5*s_{DVD}}\\
-&= \frac{12700\mbox{ m}}{0,5*0,73*10^{-6}\mbox{ m}}\\
-&\approx 3,48*10^{10}
+N_{DVD-Bits} &=  \frac{L_{DVD}}{0,5\cdots_{DVD}}\\
+&= \frac{12700\mbox{ m}}{0,5\cdot0,73\cdot10^{-6}\mbox{ m}}\\
+&\approx 3,48cdot10^{10}
 \end{align*}
 
 Umgerechnet in GByte
 \begin{align*}
-C_{DVD} &= \frac{N_{DVD-Bits}}{8*1024*1024}\\
-C_{DVD} &= \frac{3,48*10^{10}}{8*1024*1024*1024}\\
+C_{DVD} &= \frac{N_{DVD-Bits}}{8\cdot1024\cdot1024}\\
+C_{DVD} &= \frac{3,48\cdot10^{10}}{8\cdot1024\cdot1024\cdot1024}\\
 &\approx 4,05\mbox{ GB}
 \end{align*}
 
