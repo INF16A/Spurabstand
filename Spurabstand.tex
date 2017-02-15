@@ -8,7 +8,7 @@
 % {pnasmathematics} = Template for a one-column mathematics article
 % {pnasinvited} = Template for a PNAS invited submission
 \usepackage{siunitx}
-
+\setcitestyle{authoryear,open={((},close={))}}
 
 \setboolean{displaywatermark}{false} % Set to false to remove the watermark
 
@@ -109,12 +109,12 @@ Die Anzahl der Bits im Datenbereich kann dann anschließend ebenfalls berechnet 
 Für eine CD ergibt sich folgende Berechnung: \\ \\
 Für die genutzte Datenfläche aus \eqref{eq:kreisring}
 \begin{align*}
- A_{cd} &= \pi\cdot((r_{\mbox{outer}_{\mbox{cd}}})^2-(r_{\mbox{inner}_{\mbox{cd}}})^2)  \ref{eq:kreisring}\\	
+ A_{cd} &= \pi\cdot((r_{\mbox{outer}_{\mbox{cd}}})^2-(r_{\mbox{inner}_{\mbox{cd}}})^2)\\	
 &= \pi\cdot((5,8\mbox{cm})^2-(2,3\mbox{ cm})^2) \\
  &=  \pi\cdot((0,0058\mbox{ m})^2-(0,0023\mbox{ m})^2) \approx  8,91\cdot10^{-3}\mbox{ m}^2.
 \end{align*}
 
-Für die Gesamtlänge der Spur aus \ref{eq:kreisring} ergibt sich mit \eqref{eq:cdspur}
+Für die Gesamtlänge der Spur aus \eqref{eq:kreisring} ergibt sich mit \eqref{eq:cdspur}
 \begin{align*}
  L_{cd} &= \frac{\mbox{Fläche für Daten}}{\mbox{Spurbreite}}\\
  &= \frac{A_{\mbox{cd}}}{S_{\mbox{cd}}}\\
@@ -145,12 +145,12 @@ Von einer DVD konnten die folgenden Werte abgelesen werden: \begin{math} r_{\mbo
 
 Für die genutzte Datenfläche aus \eqref{eq:kreisring}
 \begin{align*}
- A_{\mbox{dvd}} &= \pi\cdot((r_{\mbox{outer}_{\mbox{dvd}}})^2-(r_{\mbox{inner}_{\mbox{dvd}}})^2)  \ref{eq:kreisring}\\	
+ A_{\mbox{dvd}} &= \pi\cdot((r_{\mbox{outer}_{\mbox{dvd}}})^2-(r_{\mbox{inner}_{\mbox{dvd}}})^2)  \\	
 &= \pi\cdot((5,9\mbox{cm})^2-(2,3\mbox{ cm})^2) \\
  &=  \pi\cdot((0,0059\mbox{ m})^2-(0,0023\mbox{ m})^2) \approx 9,27\cdot10^{-3}\mbox{ m}^2.
 \end{align*}
 
-Für die Gesamtlänge der Spur aus \ref{eq:kreisring} ergibt sich mit \eqref{eq:cdspur}
+Für die Gesamtlänge der Spur aus \eqref{eq:kreisring} ergibt sich mit \eqref{eq:cdspur}
 \begin{align*}
  L_{\mbox{dvd}} &= \frac{\mbox{Fläche für Daten}}{\mbox{Spurbreite}}\\
  &= \frac{A_{\mbox{dvd}}}{S_{\mbox{dvd}}}\\
