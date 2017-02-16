@@ -71,7 +71,7 @@ vereinfachter Versuchsaufbau}
 }
 \end{figure}
 
-Aufgrund der Funktionsweise des Leseverfahrens, ist es naheliegend, ein ähnliches Verfahren zur Ermittlung des Spurabstandes von optischen Datenträgern zu nutzen. Dabei können die Vertiefungen in der Kunststoffschicht als Doppelspalt genutzt werden. Um davon auf den Spurabstand schließen zu können, ist es erforderlich dass von Löchern auf verschiedenen Spuren simultan bestrahlt werden. Wegen dem daraus resultierenden Größenverhältnis zwischen Spurabstand und Strahlgröße ist es notwendig, einen schwach gebündelten Laserstrahl zu verwenden. Zur Erfassung der abgelenkt und reflektierten Strahlen wird eine Mattscheibe genutzt, auf welcher die Abstände der Strahlen zueinander gemessen werden können, woraus sich folgender vereinfachter Versuchsaufbau ergibt \ref{fig:Versuchsaufbau}.
+Aufgrund der Funktionsweise des Leseverfahrens, ist es naheliegend, ein ähnliches Verfahren zur Ermittlung des Spurabstandes von optischen Datenträgern zu nutzen. Dabei können die Vertiefungen in der Kunststoffschicht als Doppelspalt genutzt werden. Um davon auf den Spurabstand schließen zu können, ist es erforderlich dass mehrere Löcher auf mindestens zwei verschiedenen Spuren simultan bestrahlt werden. Wenn mehrere Spuren bestrahlt werden, treten keine für die Messung negativen Effekte auf \cite{Kit2016Dreifachspalt}. Wegen des daraus resultierenden Größenverhältnisses zwischen Spurabstand und Strahlgröße ist es notwendig, einen Laserstrahl zu verwenden, der breit genug ist, um mehrere Löcher auf einmal abzudecken. Ein Handelsüblicher Laserpointer erfüllt diese Voraussetzungen. Zur Erfassung der abgelenkten und reflektierten Strahlen wird eine Mattscheibe genutzt, auf welcher die Abstände der Strahlen zueinander gemessen werden können, woraus sich der in Fig.\ref{fig:Versuchsaufbau} vereinfacht dargestellte Versuchsaufbau ergibt.
 
 
 
@@ -82,7 +82,7 @@ Aufgrund der Funktionsweise des Leseverfahrens, ist es naheliegend, ein ähnlich
 \parbox{0.9\textwidth}
 
 {\caption{\label{fig:Spalt}
-Spalt}
+Doppelspalteffekt am vom Laser angestrahlten optischen Datenträger}
 \sffamily \small{
 Der auf den Datenträger flach auftreffende Laserstrahl wird abgelenkt und von Vertiefungen unterschiedlicher Spuren auf die Mattscheibe reflektiert. Der Abstand der Strahlen ist auf der Mattscheibe messbar.}
 }
@@ -93,14 +93,15 @@ Der auf den Datenträger flach auftreffende Laserstrahl wird abgelenkt und von V
 \subsection*{Versuchsergebnisse}
 
 
-Da der Lochabstand von CD und DVD extrem gering ist, kann man diese mit einem handelsüblichen Laserpointer durchleuchten und hierbei die Löcher als Doppelspalt verwenden. Es treten die oben genannten Interferenzeffekte auf, anhand deren das Verhältnis aus der gegebenen Wellenlänge das Lasers und dem  Lochabstand berechnet werden kann. Hierbei wird zuerst aus dem gemessenen Abstand der Interferenzmaxima \begin{math}d[\mbox{cm}]\end{math} und dem Abstand zwischen Mattscheibe und Datenträger \begin{math}l[\mbox{cm}]\end{math} der Austrittswinkel \begin{math}\theta\end{math} berechnet. Die Berechnung hierzu erfolgt über den Arcustangens:
+Da der Lochabstand von CD und DVD extrem gering ist, kann man die vom Laserpointer beleuchtete Stelle als Doppelspalt betrachten (Siehe Fig.\ref{fig:Spalt}). Es treten die oben genannten Interferenzeffekte auf, anhand deren gemäß \cite{Kit2016Doppelspalt} das Verhältnis aus der gegebenen Wellenlänge des Lasers \begin{math}\lambda[\mbox{nm}]\end{math} und dem Lochabstand berechnet werden kann. Hierbei wird zuerst aus dem gemessenen Abstand der Interferenzmaxima \begin{math}d[\mbox{cm}]\end{math} und dem Abstand zwischen Mattscheibe und Datenträger \begin{math}l[\mbox{cm}]\end{math} der Austrittswinkel \begin{math}\theta\end{math} berechnet. Die Berechnung hierzu erfolgt über den Arcustangens:
 
 \begin{equation}
 \label{eq:Theta_Berechnung}
 \theta=\arctan\frac{d}{l}.
 \end{equation}
 
-Aus diesem Winkel lässt sich nun entsprechend der Grafik \ref{fig:Doppelspalt_Modell} mit Hilfe des Gangunterschieds \begin{math}\Delta s[\mbox{nm}]\end{math} der Spurabstand \begin{math}g[\mbox{\textmu m}]\end{math} berechnen. Der Gangunterschied kann in diesem Fall gleich der Wellenlänge \begin{math}\lambda[\mbox{nm}]\end{math} gesetzt werden, da ein Interferenzmaximum nur auftritt, wenn die beiden Wellen im gleichen Phasenabschnitt auftreten. Daraus wird nun die Berechnungsformel für den Spurabstand abhängig von Wellenlänge und Winkel abgeleitet:
+Aus diesem Winkel lässt sich nun entsprechend Fig.\ref{fig:Doppelspalt_Modell} mit Hilfe des Gangunterschieds \begin{math}\Delta s[\mbox{nm}]\end{math} der Spurabstand \begin{math}g[\mbox{\textmu m}]\end{math} berechnen. Der Gangunterschied kann in diesem Fall gleich der Wellenlänge \begin{math}\lambda[\mbox{nm}]\end{math} gesetzt werden, da ein Interferenzmaximum nur auftritt, wenn die beiden Wellen im gleichen Phasenabschnitt auftreten.
+Daraus wird nun die Berechnungsformel für den Spurabstand abhängig von Wellenlänge und Winkel abgeleitet:
 
 \begin{equation}
 \label{eq:Spurabstand_Sinus}
@@ -136,14 +137,14 @@ Ablekungsmodell am Doppelspalt}
 \addtabletext{Die Tabelle stellt die Messergebnisse in Abhängigkeit des Abstands für die CD und DVD da}
 \end{table}
 
-Für den Spurabstand einer CD ergibt sich dann mit \eqref{eq:Spurabstand_Sinus}:
+Für den Spurabstand einer CD ergibt sich dann mit \eqref{eq:Spurabstand_Sinus} und der Wellenlänge des verwendeten Lasers(632\si{\nano\metre}):
 \begin{align*}
- g_{cd} &= \frac{632\cdot10^{-9}\mbox{ m}^2}{\sin{20,8}}\\
+ g_{cd} &= \frac{632\cdot10^{-9}\mbox{ m}^2}{\sin{20,8\mbox{\textdegree}}}\\
  &\approx 1,78 \cdot 10^{-9}\mbox{m}
 \end{align*}
 Analog dazu der Spurabstand der DVD mit \eqref{eq:Spurabstand_Sinus}:
 \begin{align*}
- g_{dvd} &= \frac{632\cdot10^{-9}\mbox{ m}^2}{\sin{60,0}}\\
+ g_{dvd} &= \frac{632\cdot10^{-9}\mbox{ m}^2}{\sin{60,0\mbox{\textdegree}}}\\
  &\approx 0,73 \cdot 10^{-9}\mbox{m}
 \end{align*}
 
@@ -168,7 +169,7 @@ Schematische Darstellung eines optischen Datenträgers}
 }
 \end{figure}
 
-Aus \ref{fig:Rohling}, das den schematischen Aufbau einer CD oder DVD zeigt, können zwei Radien entnommen werden, über die die Fläche des Datenbereichs berechnet werden kann.
+Aus Fig.\ref{fig:Rohling}, das den schematischen Aufbau einer CD oder DVD zeigt, können zwei Radien entnommen werden, über die die Fläche des Datenbereichs berechnet werden kann.
 Für die folgenden Berechnungen gilt:  \begin{math} r_{\mbox{i}}  = \mbox{innerer Radius und } r_{\mbox{a}} = \mbox{äußerer Radius} \end{math} \\
 Von einer CD konnten die folgenden Werte abgelesen werden:
 \begin{align*} r_{\mbox{i}_{\mbox{cd}}} = 2,3 \mbox{ cm und } r_{\mbox{a}_{\mbox{cd}}} = 5,8 \mbox{ cm} \end{align*} 
@@ -180,14 +181,14 @@ Die Anzahl der Bits im Datenbereich kann dann anschließend ebenfalls berechnet 
 
 \subsection{Berechnung CD}
 Für eine CD ergibt sich folgende Berechnung: \\ \\
-Für die genutzte Datenfläche aus \eqref{eq:kreisring}
+Für die genutzte Datenfläche aus \eqref{eq:kreisring}:
 \begin{align*}
  A_{cd} &= \pi\cdot((r_{\mbox{a}_{\mbox{cd}}})^2-(r_{\mbox{i}_{\mbox{cd}}})^2)\\	
 &= \pi\cdot((5,8\mbox{cm})^2-(2,3\mbox{ cm})^2) \\
  &=  \pi\cdot((0,0058\mbox{ m})^2-(0,0023\mbox{ m})^2) \approx  8,91\cdot10^{-3}\mbox{ m}^2.
 \end{align*}
 
-Für die Gesamtlänge der Spur aus \eqref{eq:kreisring} ergibt sich mit \eqref{eq:cdspur}
+Für die Gesamtlänge der Spur aus \eqref{eq:kreisring} ergibt sich mit \eqref{eq:cdspur}:
 \begin{align*}
  L_{cd} &= \frac{\mbox{Fläche für Daten}}{\mbox{Spurbreite}}\\
  &= \frac{A_{\mbox{cd}}}{S_{\mbox{cd}}}\\
@@ -195,7 +196,7 @@ Für die Gesamtlänge der Spur aus \eqref{eq:kreisring} ergibt sich mit \eqref{e
  &= 5005\mbox{ m}.
 \end{align*}
 
-Die Anzahl der Bits beträgt dann über \eqref{eq:bitanzahl}
+Die Anzahl der Bits beträgt dann über \eqref{eq:bitanzahl}:
 \begin{align*}
 N_{\mbox{cd-bits}} &=  \frac{L_{\mbox{cd}}}{0,5\cdot s_{\mbox{cd}}}\\
 &= \frac{5005\mbox{ m}}{0,5 \cdot 1,78 \cdot 10^{-6}\mbox{ m}}\\
@@ -203,11 +204,11 @@ N_{\mbox{cd-bits}} &=  \frac{L_{\mbox{cd}}}{0,5\cdot s_{\mbox{cd}}}\\
 &\approx 5,6 \cdot 10^9.
 \end{align*}
 
-Umgerechnet in MByte
+Umgerechnet in MiB:
 \begin{align*}
 C_{\mbox{cd}} &= \frac{N_{\mbox{cd-bits}}}{8\cdot1024\cdot1024}\\
 &= \frac{ 5,6\cdot10^9}{8\cdot1024\cdot1024}\\
-&\approx 668\mbox{ MB}.
+&\approx 668\mbox{ MiB}.
 \end{align*}
 
 Die Größenordnung entspricht der einer handelsüblichen CD.
@@ -216,14 +217,14 @@ Die Größenordnung entspricht der einer handelsüblichen CD.
 Für eine DVD ergibt sich analog dazu die folgende Berechnung: \\ \\
 Von einer DVD konnten die folgenden Werte abgelesen werden: \begin{math} r_{\mbox{i}_{\mbox{dvd}}} = 2,3 \mbox{ cm und } r_{\mbox{a}_{\mbox{dvd}}} = 5,9 \mbox{ cm} \end{math}. \\
 
-Für die genutzte Datenfläche aus \eqref{eq:kreisring}
+Für die genutzte Datenfläche aus \eqref{eq:kreisring}:
 \begin{align*}
  A_{\mbox{dvd}} &= \pi\cdot((r_{\mbox{a}_{\mbox{dvd}}})^2-(r_{\mbox{i}_{\mbox{dvd}}})^2)  \\	
 &= \pi\cdot((5,9\mbox{cm})^2-(2,3\mbox{ cm})^2) \\
  &=  \pi\cdot((0,0059\mbox{ m})^2-(0,0023\mbox{ m})^2) \approx 9,27\cdot10^{-3}\mbox{ m}^2.
 \end{align*}
 
-Für die Gesamtlänge der Spur aus \eqref{eq:kreisring} ergibt sich mit \eqref{eq:dvdspur}
+Für die Gesamtlänge der Spur aus \eqref{eq:kreisring} ergibt sich mit \eqref{eq:dvdspur}:
 \begin{align*}
  L_{\mbox{dvd}} &= \frac{\mbox{Fläche für Daten}}{\mbox{Spurbreite}}\\
  &= \frac{A_{\mbox{dvd}}}{S_{\mbox{dvd}}}\\
@@ -231,7 +232,7 @@ Für die Gesamtlänge der Spur aus \eqref{eq:kreisring} ergibt sich mit \eqref{e
  &\approx 12700\mbox{ m}.
 \end{align*}
 
-Die Anzahl der Bits beträgt dann über \eqref{eq:bitanzahl}
+Die Anzahl der Bits beträgt dann über \eqref{eq:bitanzahl}:
 \begin{align*}
 N_{\mbox{dvd-bits}} &=  \frac{L_{\mbox{dvd}}}{0,5\cdot S_{\mbox{dvd}}}\\
 &= \frac{12700\mbox{ m}}{0,5\cdot 0,73\cdot10^{-6}\mbox{ m}}\\
