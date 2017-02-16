@@ -52,12 +52,13 @@ Die in diesem Artikel vorgestellte Methode ermöglicht es Spurabstände auf opti
 Die mit dieser Vorgehensweise ermittelten Werte für handelsübliche CDs und DVDs, sollen als Referenz und Denkanstoß für die Entwicklung von innovativen Speicherlösungen von morgen dienen.
 
 \section*{Technische Grundlagen für den Versuch}
-Bei diesem Versuch nimmt man sich die bei einem von elektromagnetischen Wellen bestrahlten Doppelspalt auftretetenden Effekte zur Hilfe. Wird eine Lochplatte beziehungsweise eine Spaltplatte von einem Laserstrahl getroffen, so verteilt sich das Licht nahezu gleichmäßig hinter der Spaltplatte. Hält man eine Mattscheibe hinter den Doppelspalt, erscheinen mehrere von der Mitte aus in zunehmendem Abstand symmetrisch angeordnete Punkte. Dies würde eigentlich einer gleichmäßigen Verteilung widersprechen. Die Besonderheit ist jedoch, dass zwei Spalten verwendet werden und daher der Lichtstrahl an Beiden gestreut wird. Betrachtet man nun einen Punkt in einem Abstand von beiden Löchern, der sich um jeweils \begin{math}n\cdot\lambda\end{math} unterscheidet, ist an diesem die Bestrahlungsstärke höher, da die aus beiden Spalten austretenden Wellen an dieser Stelle nicht zueinander phasenverschoben sind. ein sogenanntes Interferenzmaximum entsteht aus der Addition der Amplituden beider austretender Wellen. An anderen Stellen tritt eine Phasenverschiebung auf, da die Lichtstrahle an unterschiedlichen Punkten der Periode zusammentreffen. Somit entsteht eine von der Position abhängige stehende Welle, die durch die Mattscheibe visualisiert wird.
+Bei diesem Versuch nimmt man sich die bei einem von elektromagnetischen Wellen bestrahlten Doppelspalt auftretetenden Effekte zur Hilfe. Wird eine Lochplatte beziehungsweise eine Spaltplatte von einem Laserstrahl getroffen, so verteilt sich das Licht nahezu gleichmäßig hinter der Spaltplatte. Hält man eine Mattscheibe hinter den Doppelspalt, erscheinen mehrere von der Mitte aus in zunehmendem Abstand symmetrisch angeordnete Punkte. Dies würde eigentlich einer gleichmäßigen Verteilung widersprechen. Die Besonderheit ist jedoch, dass zwei Spalten verwendet werden und daher der Lichtstrahl an Beiden gestreut wird. Betrachtet man nun einen Punkt in einem Abstand von beiden Löchern, der sich um jeweils \begin{math}n\cdot\lambda\end{math} unterscheidet, ist an diesem die Bestrahlungsstärke höher, da die aus beiden Spalten austretenden Wellen an dieser Stelle nicht zueinander phasenverschoben sind. Ein sogenanntes Interferenzmaximum entsteht aus der Addition der Amplituden beider austretender Wellen. An anderen Stellen tritt eine Phasenverschiebung auf, da die Lichtstrahle an unterschiedlichen Punkten der Periode zusammentreffen. Somit entsteht eine von der Position abhängige stehende Welle, die durch die Mattscheibe visualisiert wird.
 
 \subsection*{Aufbau und Leseverfahren einer CD und einer DVD}
 CDs und DVDs bestehen grundsätzlich aus drei Schichten. Die Unterste Schicht ist eine Kunststoffscheibe, auf der die binären Daten in Form vom Löchern im Mikrometerabstand eingeprägt, mit einem starken Laser eingebrannt oder eingeäzt wurden. Ein Loch steht für das Signal 1 und eben kein Loch stellt die 0 dar. Die zweite Schicht ist eine Aluminium- oder Goldfolie, die der Unterseite ihre typische Färbung verleiht. Als dritte Schicht wir eine bedruckte Schutzfolie oben aufgeklebt.Beim Lesen der CD, genauso wie  beim Lesen einer DVD tritt keine Interferenz auf, da das Lasersignal so stark gebündelt is, dass es nur ein einziges Loch auf einmal trifft. Bei diesen Disks wird das auftreffende Licht mit Hilfe der darüber liegenden Folie gespiegelt. An der Stelle, auf die das Licht zurückgestrahlt werden würde, wenn der aktuell bestrahlte Abschnitt der Disk nicht eingeprägt wäre, befindet sich ein Sensor, der seine Bestrahlungsstärke misst. Jedes mal, wenn der Laserstrahl auf ein Loch in der sich drehenden Disk trifft, wird dieses an eine andere als die ursprüngliche Stelle hin gespiegelt und es kommt kein Signal am Empfänger an. Dieser erzeugt somit eine 1 als Ausgangssignal. Anderenfalls erzeugt er eine 0.
 
 \section*{Versuchsaufbau}
+Aufgrund der Funktionsweise des Leseverfahrens, ist es naheliegend, ein ähnliches Verfahren zur Ermittlung des Spurabstandes von optischen Datenträgern zu nutzen. Dabei können die Vertiefungen in der Kunststoffschicht als Doppelspalt genutzt werden. Um davon auf den Spurabstand schließen zu können, ist es erforderlich dass von Löchern auf verschiedenen Spuren simultan bestrahlt werden. Wegen dem daraus resultierenden Größenverhältnis zwischen Spurabstand und Strahlgröße ist es notwendig, einen schwach gebündelten Laserstrahl zu verwenden. Zur Erfassung der abgelenkt und reflektierten Strahlen wird eine Mattscheibe genutzt, auf welcher die Abstände der Strahlen zueinander gemessen werden können, woraus sich folgender vereinfachter Versuchsaufbau ergibt \ref{fig:Versuchsaufbau}.
 
 \begin{figure}[!htbp]
 \centering
@@ -66,8 +67,8 @@ CDs und DVDs bestehen grundsätzlich aus drei Schichten. Die Unterste Schicht is
 \parbox{0.9\textwidth}
 
 {\caption{\label{fig:Versuchsaufbau}
-Schematischer Aufbau}
-\sffamily \small{Versuchsaufbau}
+vereinfachter Versuchsaufbau}
+\sffamily \small{Ein Laserstrahl wird auf den Datenträger gerichtet, die durch den Datenträger abgelenkt und reflektierten Strahlen werden auf einer Mattscheibe sichtbar gemacht.}
 }
 \end{figure}
 
@@ -79,14 +80,16 @@ Schematischer Aufbau}
 
 {\caption{\label{fig:Spalt}
 Spalt}
-\sffamily \small{Versuchsaufbau}
+\sffamily \small{
+Der auf den Datenträger flach auftreffende Laserstrahl wird abgelenkt und von Vertiefungen unterschiedlicher Spuren auf die Mattscheibe reflektiert. Der Abstand der Strahlen ist auf der Mattscheibe messbar.}
 }
 \end{figure}
-Abgebildet ist eine schematische Darstellung unseres Versuchaufaufbaus. Ein Laserstrahl trifft in einem flachen Winkel auf den optischen Datenträger auf, die Vertiefungen der unterschiedlichen Spuren reflektieren den Strahl. Diese treffen dann auf einen kontrastreichen Hintergrund an dem der Abstand zwischen den auftretenden Strahlen gemessen wird.
 
 
 
 \subsection*{Versuchsergebnisse}
+
+
 Da der Lochabstand von CD und DVD extrem gering ist, kann man diese mit einem handelsüblichen Laserpointer durchleuchten und hierbei die Löcher als Doppelspalt verwenden. Es treten die oben genannten Interferenzeffekte auf, anhand deren das Verhältnis aus der gegebenen Wellenlänge das Lasers und dem  Lochabstand berechnet werden kann. Hierbei wird zuerst aus dem gemessenen Abstand der Interferenzmaxima \begin{math}d[\mbox{cm}]\end{math} und dem Abstand zwischen Mattscheibe und Datenträger \begin{math}l[\mbox{cm}]\end{math} der Austrittswinkel \begin{math}\theta\end{math} berechnet. Die Berechnung hierzu erfolgt über den Arcustangens:
 
 \begin{equation}
