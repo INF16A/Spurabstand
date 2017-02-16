@@ -136,9 +136,21 @@ Ablekungsmodell am Doppelspalt}
 \addtabletext{Die Tabelle stellt die Messergebnisse in Abhängigkeit des Abstands für die CD und DVD da}
 \end{table}
 
+Für den Spurabstand einer CD ergibt sich dann mit \eqref{eq:Spurabstand_Sinus}:
+\begin{align*}
+ g_{cd} &= \frac{632\cdot10^{-9}\mbox{ m}^2}{\sin{20,8}}\\
+ &\approx 1,78 \cdot 10^{-9}\mbox{m}
+\end{align*}
+Analog dazu der Spurabstand der DVD mit \eqref{eq:Spurabstand_Sinus}:
+\begin{align*}
+ g_{dvd} &= \frac{632\cdot10^{-9}\mbox{ m}^2}{\sin{60,0}}\\
+ &\approx 0,73 \cdot 10^{-9}\mbox{m}
+\end{align*}
+
+
 \section*{Interpretation der ermittelten Werte}
-Durch die gewonnen Messergebnisse aus [... Referenz zu Messergebnisse] konnten die Hersteller Angaben von 0,73 \si{\micro\metre} (DVD) \cite{ECMA1300} und  1,6 \si{\micro\metre} (CD) \cite{ECMA359} bestätigt werden.
-\begin{equation} \label{eq:cdspur} S_{\mbox{cd}} =  1,62\mbox{ \textmu m}  \end{equation}
+Durch die gewonnen Messergebnisse konnten die Hersteller Angaben von 0,73 \si{\micro\metre} (DVD) \cite{ECMA1300} und  1,6 \si{\micro\metre} (CD) \cite{ECMA359} bestätigt werden.
+\begin{equation} \label{eq:cdspur} S_{\mbox{cd}} =  1,78\mbox{ \textmu m}  \end{equation}
 \begin{equation} \label{eq:dvdspur} S_{\mbox{dvd}} =  0,73\mbox{ \textmu m}  \end{equation} 
 \subsection{Vergleich Datenkapazität CD und DVD}
 Der geringere Spurabstand der DVD ist einer der Gründe, warum diese eine höhere Datenkapazität als CD hat, obwohl beide die gleiche Bauform haben.
@@ -178,23 +190,23 @@ Für die Gesamtlänge der Spur aus \eqref{eq:kreisring} ergibt sich mit \eqref{e
 \begin{align*}
  L_{cd} &= \frac{\mbox{Fläche für Daten}}{\mbox{Spurbreite}}\\
  &= \frac{A_{\mbox{cd}}}{S_{\mbox{cd}}}\\
- &= \frac{8,91\cdot10^{-3}\mbox{ m}^2}{1,62\cdot10^{-6}\mbox{ m} }\\
- &= 5500\mbox{ m}.
+ &= \frac{8,91\cdot10^{-3}\mbox{ m}^2}{1,78\cdot10^{-6}\mbox{ m} }\\
+ &= 5005\mbox{ m}.
 \end{align*}
 
 Die Anzahl der Bits beträgt dann über \eqref{eq:bitanzahl}
 \begin{align*}
 N_{\mbox{cd-bits}} &=  \frac{L_{\mbox{cd}}}{0,5\cdot s_{\mbox{cd}}}\\
-&= \frac{5500\mbox{ m}}{0,5 \cdot 1,62 \cdot 10^{-6}\mbox{ m}}\\
-&= 6790123457 \\
-&\approx 6,79 \cdot 10^9.
+&= \frac{5005\mbox{ m}}{0,5 \cdot 1,78 \cdot 10^{-6}\mbox{ m}}\\
+&= 55623595506 \\
+&\approx 5,6 \cdot 10^9.
 \end{align*}
 
 Umgerechnet in MByte
 \begin{align*}
 C_{\mbox{cd}} &= \frac{N_{\mbox{cd-bits}}}{8\cdot1024\cdot1024}\\
-&= \frac{ 6,79\cdot10^9}{8\cdot1024\cdot1024}\\
-&\approx 809\mbox{ MB}.
+&= \frac{ 5,6\cdot10^9}{8\cdot1024\cdot1024}\\
+&\approx 668\mbox{ MB}.
 \end{align*}
 
 Die Größenordnung entspricht der einer handelsüblichen CD.
