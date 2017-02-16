@@ -58,7 +58,6 @@ Bei diesem Versuch nimmt man sich die bei einem von elektromagnetischen Wellen b
 CDs und DVDs bestehen grundsätzlich aus drei Schichten. Die Unterste Schicht ist eine Kunststoffscheibe, auf der die binären Daten in Form vom Löchern im Mikrometerabstand eingeprägt, mit einem starken Laser eingebrannt oder eingeäzt wurden. Ein Loch steht für das Signal 1 und eben kein Loch stellt die 0 dar. Die zweite Schicht ist eine Aluminium- oder Goldfolie, die der Unterseite ihre typische Färbung verleiht. Als dritte Schicht wir eine bedruckte Schutzfolie oben aufgeklebt.Beim Lesen der CD, genauso wie  beim Lesen einer DVD tritt keine Interferenz auf, da das Lasersignal so stark gebündelt is, dass es nur ein einziges Loch auf einmal trifft. Bei diesen Disks wird das auftreffende Licht mit Hilfe der darüber liegenden Folie gespiegelt. An der Stelle, auf die das Licht zurückgestrahlt werden würde, wenn der aktuell bestrahlte Abschnitt der Disk nicht eingeprägt wäre, befindet sich ein Sensor, der seine Bestrahlungsstärke misst. Jedes mal, wenn der Laserstrahl auf ein Loch in der sich drehenden Disk trifft, wird dieses an eine andere als die ursprüngliche Stelle hin gespiegelt und es kommt kein Signal am Empfänger an. Dieser erzeugt somit eine 1 als Ausgangssignal. Anderenfalls erzeugt er eine 0.
 
 \section*{Versuchsaufbau}
-Aufgrund der Funktionsweise des Leseverfahrens, ist es naheliegend, ein ähnliches Verfahren zur Ermittlung des Spurabstandes von optischen Datenträgern zu nutzen. Dabei können die Vertiefungen in der Kunststoffschicht als Doppelspalt genutzt werden. Um davon auf den Spurabstand schließen zu können, ist es erforderlich dass von Löchern auf verschiedenen Spuren simultan bestrahlt werden. Wegen dem daraus resultierenden Größenverhältnis zwischen Spurabstand und Strahlgröße ist es notwendig, einen schwach gebündelten Laserstrahl zu verwenden. Zur Erfassung der abgelenkt und reflektierten Strahlen wird eine Mattscheibe genutzt, auf welcher die Abstände der Strahlen zueinander gemessen werden können, woraus sich folgender vereinfachter Versuchsaufbau ergibt \ref{fig:Versuchsaufbau}.
 
 \begin{figure}[!htbp]
 \centering
@@ -71,6 +70,10 @@ vereinfachter Versuchsaufbau}
 \sffamily \small{Ein Laserstrahl wird auf den Datenträger gerichtet, die durch den Datenträger abgelenkt und reflektierten Strahlen werden auf einer Mattscheibe sichtbar gemacht.}
 }
 \end{figure}
+
+Aufgrund der Funktionsweise des Leseverfahrens, ist es naheliegend, ein ähnliches Verfahren zur Ermittlung des Spurabstandes von optischen Datenträgern zu nutzen. Dabei können die Vertiefungen in der Kunststoffschicht als Doppelspalt genutzt werden. Um davon auf den Spurabstand schließen zu können, ist es erforderlich dass von Löchern auf verschiedenen Spuren simultan bestrahlt werden. Wegen dem daraus resultierenden Größenverhältnis zwischen Spurabstand und Strahlgröße ist es notwendig, einen schwach gebündelten Laserstrahl zu verwenden. Zur Erfassung der abgelenkt und reflektierten Strahlen wird eine Mattscheibe genutzt, auf welcher die Abstände der Strahlen zueinander gemessen werden können, woraus sich folgender vereinfachter Versuchsaufbau ergibt \ref{fig:Versuchsaufbau}.
+
+
 
 \begin{figure}[!htbp]
 \centering
@@ -117,6 +120,22 @@ Ablekungsmodell am Doppelspalt}
 }
 \end{figure}
 
+\begin{table}%[tbhp]
+\centering
+\caption{Messergebnisse in abhängigkeit verschiedener Abstände}
+\begin{tabular}{lrrrrrr}
+\begin{math} l \mbox{ in cm} \end{math} & 10 & 12 & 14 & 16 & 18 & 20 \\
+\midrule
+\begin{math}d_{\mbox{cd}} \mbox{ in cm} \end{math} & 3,8 & 4,6 & 5,3 & 6,1 & 6,9 & 7,6 \\
+\begin{math}d_{\mbox{dvd}} \mbox{ in cm} \end{math} & 17,3 & 20,8 & 24,1 & 27,7 & 31,1 & 34,6 \\
+\begin{math}\theta_{\mbox{cd}} \mbox{ in Grad} \end{math}& 20,8 & 21,0 & 20,7 & 20,9 & 21,0 & 20,8 \\
+\begin{math}\theta_{\mbox{dvd}} \mbox{ in Grad} \end{math} & 60,0 & 60,0 & 59,9 & 60,0 & 59,9 & 60,0  \\
+\bottomrule
+\end{tabular}
+
+\addtabletext{Die Tabelle stellt die Messergebnisse in Abhängigkeit des Abstands für die CD und DVD da}
+\end{table}
+
 \section*{Interpretation der ermittelten Werte}
 Durch die gewonnen Messergebnisse aus [... Referenz zu Messergebnisse] konnten die Hersteller Angaben von 0,73 \si{\micro\metre} (DVD) \cite{ECMA1300} und  1,6 \si{\micro\metre} (CD) \cite{ECMA359} bestätigt werden.
 \begin{equation} \label{eq:cdspur} S_{\mbox{cd}} =  1,62\mbox{ \textmu m}  \end{equation}
@@ -131,9 +150,9 @@ Der geringere Spurabstand der DVD ist einer der Gründe, warum diese eine höher
 \parbox{0.9\textwidth}
 
 {\caption{\label{fig:Rohling}
-Schematische Darstellung einer CD/DVD}
+Schematische Darstellung eines optischen Datenträgers}
 
-\sffamily \small{Ein typischer Rohling mit gekennzeichnetem Datenbereich und Radien}
+\sffamily \small{Ein typischer optischer Datenträger mit gekennzeichnetem Radien zur Darstellung des Datenbereichs}
 }
 \end{figure}
 
@@ -191,7 +210,7 @@ Für die genutzte Datenfläche aus \eqref{eq:kreisring}
  &=  \pi\cdot((0,0059\mbox{ m})^2-(0,0023\mbox{ m})^2) \approx 9,27\cdot10^{-3}\mbox{ m}^2.
 \end{align*}
 
-Für die Gesamtlänge der Spur aus \eqref{eq:kreisring} ergibt sich mit \eqref{eq:cdspur}
+Für die Gesamtlänge der Spur aus \eqref{eq:kreisring} ergibt sich mit \eqref{eq:dvdspur}
 \begin{align*}
  L_{\mbox{dvd}} &= \frac{\mbox{Fläche für Daten}}{\mbox{Spurbreite}}\\
  &= \frac{A_{\mbox{dvd}}}{S_{\mbox{dvd}}}\\
@@ -226,6 +245,7 @@ Denkbar sind extrem kleine Spurabstände oder Medien, die sehr viele verschieden
 % If you see unexpected formatting errors, try commenting out \pnasbreak
 % as it can run into problems with floats and footnotes on the final page.
 %\pnasbreak
+
 
 % Bibliography
 \bibliography{ReferenceDatabase}
